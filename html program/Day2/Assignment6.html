@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Tag</title>
+</head>
+<body>
+     <h1>Displaying an Image from a URL</h1>
+
+  <p>
+    Below is an image embedded from an external URL. If the image cannot be loaded, fallback text will be shown.
+  </p>
+
+  <img 
+    src="Sneha.jfif" 
+    alt="Image not found " 
+    width="300" 
+    height="200"
+    onerror="this.style.display='none'; document.getElementById('fallback').style.display='block';"
+  >
+
+  <div id="fallback" style="display: none; color: red;">
+    Image could not be displayed. Please check your connection or the image URL.
+  </div>
+</body>
+</html>
