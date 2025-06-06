@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .card {
+      margin: 30px;
+
+      
+      border: 5px;
+      border-color: red;
+      border-style: dashed;
+      padding: 20px;
+      width: 300px;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+
+    .label {
+      margin: 10px 0;
+      font-weight: bold;
+      color: red;
+    }
+
+    body {
+      background-color: #e0f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 10px;
+      border: 2px dashed #aaa;
+    }
+    </style>
+</head>
+<body>
+      
+  <div class="container">
+    <div class="card">
+      <div class="label">Padding Area</div>
+      <div class="label">Border Area</div>
+      <div class="label">Margin Area (visible as space outside card)</div>
+    </div>
+  </div>    
+</body>
+</html>
