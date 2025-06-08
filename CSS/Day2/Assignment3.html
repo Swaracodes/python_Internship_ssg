@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Inheritance</title>
+  <style>
+    .parent  {
+      font-size: 18px;
+      color: darkblue;
+      border: 2px solid black; /* Not inherited */
+      padding: 10px;
+    }
+
+    table {
+      margin-top: 10px;
+      border-collapse: collapse;
+    }
+
+    td, th {
+      border: 1px solid gray;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parent">
+    <h2>This is a heading</h2>
+    <p>This is a paragraph with a <span>span inside it</span>.</p>
+
+    <table>
+      <tr>
+        <th>Header</th>
+        <th>Header</th>
+      </tr>
+      <tr>
+        <td>Row 1</td>
+        <td>Row 1</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>

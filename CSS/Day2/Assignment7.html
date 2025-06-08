@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Z-Index Demo</title>
+<style>
+  .container {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    border: 2px solid #333;
+    margin: 40px auto;
+    background: #f9f9f9;
+  }
+
+  .box {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    color: white;
+    font-weight: bold;
+    line-height: 150px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 8px;
+  }
+
+  .box1 {
+    top: 20px;
+    left: 20px;
+    background: #e74c3c; /* red */
+    z-index: 1;
+  }
+
+  .box2 {
+    top: 70px;
+    left: 70px;
+    background: #3498db; /* blue */
+    z-index: 2;
+  }
+
+  .box3 {
+    top: 120px;
+    left: 120px;
+    background: #2ecc71; /* green */
+    z-index: -1;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box box1">z-index: 1</div>
+  <div class="box box2">z-index: 2</div>
+  <div class="box box3">z-index: -1</div>
+</div>
+
+<p style="text-align:center; max-width:400px; margin:auto;">
+  The blue box with <code>z-index: 2</code> appears on top, the red box with <code>z-index: 1</code> is in the middle,
+  and the green box with <code>z-index: -1</code> is underneath.
+</p>
+
+</body>
+</html>
