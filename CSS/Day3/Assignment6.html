@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hover to Power</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f8ff;
+    }
+
+    .power-button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: #6a5acd;
+      color: white;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .power-button:hover {
+      background-color: #e209ff; /* tomato color */
+      font-size: 1.4rem;
+      transform: rotate(-3deg) scale(3.1);
+    }
+  </style>
+</head>
+<body>
+
+  <button class="power-button">Hover Me</button>
+
+</body>
+</html>

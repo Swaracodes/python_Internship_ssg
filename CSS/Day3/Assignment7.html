@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>First Child Candy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #fffbe6;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    li:first-child {
+      color: #e91e63;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    li:first-child::before {
+      content: "🍬 ";
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li>First item is special</li>
+    <li>Second item is fine</li>
+    <li>Third item is okay</li>
+    <li>Fourth item shows up too</li>
+  </ul>
+
+</body>
+</html>

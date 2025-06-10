@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Cards Row</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+
+    /* Flex container for product cards */
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Individual product card */
+    .card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 30%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 90%;
+      height: 70%;
+    }
+
+    .card-content {
+      padding: 16px;
+    }
+
+    .card-content h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="S.png" alt="Photo 1">
+      <div class="card-content">
+        <h3>Product 1</h3>
+        <p>Description for Photo 1.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="1.jfif" alt="Photo 2">
+      <div class="card-content">
+        <h3>Product 2</h3>
+        <p>Description for Photo 2.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="2.jfif" alt="Photo 3">
+      <div class="card-content">
+        <h3>Product 3</h3>
+        <p>Description for Photo 3.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Flex Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+      font-family: sans-serif;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* space between items */
+    }
+
+    .image-box {
+      width: 30%;
+      min-width: 200px;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-box img {
+      width: 500px;
+      height: 500px;
+      display: block;
+    }
+
+    /* Responsive for small screens */
+    @media (max-width: 768px) {
+      .image-box {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .image-box {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery">
+    <div class="image-box">
+      <img src="S.png" alt="Gallery Image 1">
+    </div>
+    <div class="image-box">
+      <img src="1.jfif" alt="Gallery Image 2">
+    </div>
+    <div class="image-box">
+      <img src="2.jfif" alt="Gallery Image 3">
+    </div>
+    <div class="image-box">
+      <img src="3.jfif" alt="Gallery Image 4">
+    </div>
+    <div class="image-box">
+      <img src="4.jfif" alt="Gallery Image 5">
+    </div>
+    <div class="image-box">
+      <img src="5.jfif" alt="Gallery Image 6">
+    </div>
+  </div>
+
+</body>
+</html>
