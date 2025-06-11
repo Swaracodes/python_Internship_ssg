@@ -1,0 +1,11 @@
+/* Assignment 2: Rocket Launch (on hover) */
+.rocket {
+  font-size: 100px;
+  display: inline-block;
+  transition: transform 1s ease-out;
+  margin-top: 20px;
+}
+
+.rocket:hover {
+  transform: translateY(-500px);
+}

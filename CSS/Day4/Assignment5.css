@@ -1,0 +1,18 @@
+
+/* Assignment 5: Disco Light Box */
+.disco {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  border-radius: 70px;
+  background: red;
+  animation: spinDisco 2s infinite linear;
+}
+
+@keyframes spinDisco {
+  0%   { transform: rotate(0deg); background: red; }
+  25%  { transform: rotate(90deg); background: yellow; }
+  50%  { transform: rotate(180deg); background: green; }
+  75%  { transform: rotate(270deg); background: blue; }
+  100% { transform: rotate(360deg); background: purple; }
+}
