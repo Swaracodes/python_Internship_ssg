@@ -1,7 +1,8 @@
+// String concatination
 let fName="Sneha";
 let lName="Gaikwad";
 
-var Full_Name=fName+ " " +lName+"      ";// String concatination
+var Full_Name=fName + " " + lName + "      ";// String concatination
 console.log("Full Name: ",Full_Name);
 
 console.log("Length of Full name: ", Full_Name.length);//string length
