@@ -1,3 +1,4 @@
+// assing by index
 let arr = [1,2,3,4,5];
 
 console.log(arr);
@@ -17,6 +18,7 @@ console.log(names[2]);
 let mixed = [1,2,3.23,"Sneha",null,undefined];
 console.log(mixed);
 
+//changing values
 let car = ["Lamborgine","Porche","Kia"];
 console.log(car);
 car[1]="Swift";
