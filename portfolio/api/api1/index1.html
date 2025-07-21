@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgriCart - Agriculture Products</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🌿 AgriCart</div>
+    <nav>
+      <input type="text" id="searchInput" placeholder="Search products..." />
+      <select id="categoryFilter">
+        <option value="">All Categories</option>
+        <option value="smartphones">Smartphones</option>
+        <option value="laptops">Laptops</option>
+        <option value="fragrances">Fragrances</option>
+        <option value="groceries">Groceries</option>
+      </select>
+      <div class="cart" onclick="toggleCart()">
+        🛒 Cart (<span id="cartCount">0</span>) - ₹<span id="cartTotal">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="products" id="productList"></div>
+  </main>
+
+  <!-- Cart Modal -->
+  <div class="cart-modal" id="cartModal">
+    <h2>Your Cart</h2>
+    <ul id="cartItemsList"></ul>
+    <p><strong>Total: ₹<span id="cartModalTotal">0</span></strong></p>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
