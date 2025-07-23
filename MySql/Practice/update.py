@@ -6,8 +6,10 @@ def update_data():
         if conn is None:
             return
         cursor = conn.cursor()
-        query = "UPDATE users SET age = %s WHERE name = %s"
-        cursor.execute(query, (60, "Priyanka"))
+        age1=input("Enter Age to Change: ")
+        id1=input("Enter ID to update: ")
+        query = "UPDATE users SET age = %s WHERE id = %s"
+        cursor.execute(query, (age1,id1))
         conn.commit()
         if cursor.rowcount > 0:
             print("✅ Data updated!")

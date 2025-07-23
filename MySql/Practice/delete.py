@@ -6,8 +6,9 @@ def delete_data():
         if conn is None:
             return
         cursor = conn.cursor()
-        query = "DELETE FROM users WHERE name = %s"
-        cursor.execute(query, ("Priyanka",))
+        query = "DELETE FROM users WHERE id = %s"
+        i=input("Enter Id to delete record: ")
+        cursor.execute(query, (i,))
         conn.commit()
         if cursor.rowcount > 0:
             print("🗑️ Data deleted!")

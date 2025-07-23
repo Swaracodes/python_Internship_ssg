@@ -10,10 +10,11 @@ def insert_data():
             return
         cursor = conn.cursor()
         query = "INSERT INTO users (name, email, age) VALUES (%s, %s, %s)"
+        n=input("Enter Your name: ")
+        e=input("Enter Your Email: ")
+        a=input("Enter your age: ")
         data = [
-            ("Sneha", "Sneha@example.com", 25),
-            ("Aditya", "adip@example.com", 28),
-            ("Priyanka", "priya@example.com", 22)
+            (n, e, a),
         ]
         cursor.executemany(query, data)
         conn.commit()

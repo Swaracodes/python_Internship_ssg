@@ -3,6 +3,8 @@ from insert_data import insert_data
 from view import view_data
 from update import update_data
 from delete import delete_data
+from resert import reset_autoincrement
+
 
 def main():
     while True:
@@ -12,6 +14,7 @@ def main():
         print("3. Update Data")
         print("4. Delete Data")
         print("5. View Data")
+        print("6. Reset Data and ID")
         print("0. Exit")
 
         choice = input("Enter your choice: ")
@@ -26,6 +29,8 @@ def main():
             delete_data()
         elif choice == "5":
             view_data()
+        elif choice == "6":
+            reset_autoincrement()
         elif choice == "0":
             print("Exiting program. Goodbye!")
             break
