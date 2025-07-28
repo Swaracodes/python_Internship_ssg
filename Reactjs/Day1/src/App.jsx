@@ -6,7 +6,7 @@ import cj from './assets/cj.jfif';
 function App() {
   return (
     <div className="min-h-screen bg-blue-100 flex items-center justify-center p-8">
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 bg sm:grid-cols-2 lg:grid-cols-3">
         <Card
           title="Explore Nature"
           description="Enjoy the scenic beauty and tranquility of nature."
